@@ -1,6 +1,5 @@
-
-import { aleatorio, nome } from "./js/aleatorio.js";
-import { perguntas } from "./js/perguntas.js";
+import { aleatorio, nome } from "./aleatorio.js";
+import { perguntas } from "./perguntas.js";
 
 // Elementos da página
 const telaInicial = document.querySelector(".tela-inicial");
