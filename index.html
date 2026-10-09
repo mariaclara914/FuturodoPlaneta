@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Uma missão interativa sobre inteligência artificial e meio ambiente."
+    >
+
+    <title>Futuro do Planeta | Uma missão com IA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="#" aria-label="Futuro do Planeta">
+            <span class="logo-simbolo" aria-hidden="true">✳</span>
+            <span>futuro do planeta</span>
+        </a>
+
+        <span class="cabecalho-legenda">Tecnologia com propósito</span>
+    </header>
+
+    <main class="container">
+
+        <!-- Tela de apresentação -->
+        <section class="tela-inicial" aria-labelledby="titulo-principal">
+            <div class="etiqueta">
+                <span class="ponto-verde"></span>
+                UMA MISSÃO PELO NOSSO FUTURO
+            </div>
+
+            <div class="ilustracao-inicial" aria-hidden="true">
+                <span class="orbita orbita-um"></span>
+                <span class="orbita orbita-dois"></span>
+                <span class="simbolo-ia">IA</span>
+                <span class="estrela estrela-um">✳</span>
+                <span class="estrela estrela-dois">✦</span>
+            </div>
+
+            <h1 id="titulo-principal">
+                E se a inteligência artificial pudesse
+                <span>ajudar a cuidar do planeta?</span>
+            </h1>
+
+            <p class="introducao">
+                O futuro está cheio de possibilidades. Faça suas escolhas,
+                descubra como a tecnologia pode ajudar o meio ambiente e veja
+                como pequenas decisões podem fazer a diferença.
+            </p>
+
+            <button class="iniciar-btn" type="button">
+                Começar minha missão
+                <span aria-hidden="true">→</span>
+            </button>
+
+            <p class="nota-inicial">
+                Uma experiência interativa sobre IA e meio ambiente
+            </p>
+        </section>
+
+        <!-- Tela das perguntas -->
+        <section
+            class="tela-jogo"
+            aria-live="polite"
+            aria-label="Pergunta da missão"
+            hidden
+        >
+            <div class="progresso">
+                <span class="progresso-texto">SUA MISSÃO</span>
+                <span class="progresso-numero">Pergunta 1 de 6</span>
+            </div>
+
+            <div
+                class="barra-progresso"
+                role="progressbar"
+                aria-label="Progresso da missão"
+                aria-valuemin="0"
+                aria-valuemax="6"
+                aria-valuenow="1"
+            >
+                <div class="barra-progresso-preenchimento"></div>
+            </div>
+
+            <div class="cartao-pergunta">
+                <span class="pergunta-categoria">PENSE NO FUTURO</span>
+
+                <h2 class="pergunta-enunciado"></h2>
+
+                <div class="opcoes"></div>
+            </div>
+
+            <p class="dica-jogo">
+                Pense com carinho: cada escolha pode fazer a diferença.
+            </p>
+        </section>
+
+        <!-- Tela de resultado -->
+        <section class="caixa-resultado" aria-live="polite" hidden>
+            <div class="ilustracao-resultado" aria-hidden="true">
+                <span class="orbita orbita-um"></span>
+                <span class="orbita orbita-dois"></span>
+                <span class="simbolo-ia">IA</span>
+                <span class="folha-resultado">✳</span>
+            </div>
+
+            <span class="resultado-etiqueta">FIM DA JORNADA</span>
+
+            <h2>O futuro também depende das suas escolhas.</h2>
+
+            <p class="mensagem-resultado">
+                Você concluiu sua missão! Suas decisões mostram que a
+                inteligência artificial pode ajudar a cuidar do planeta
+                quando é usada com consciência e responsabilidade.
+            </p>
+
+            <div class="resumo-resultado">
+                <span class="icone-resumo" aria-hidden="true">✦</span>
+
+                <div>
+                    <h3>Para levar com você</h3>
+                    <p>
+                        A IA pode apoiar a preservação ambiental, mas é
+                        importante verificar informações, economizar recursos
+                        e manter o pensamento crítico.
+                    </p>
+                </div>
+            </div>
+
+            <div class="historia-final">
+                <h3>O caminho que você construiu</h3>
+                <p class="texto-resultado"></p>
+            </div>
+
+            <button class="novamente-btn" type="button">
+                <span aria-hidden="true">↻</span>
+                Jogar novamente
+            </button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <span>Feito com cuidado pelo nosso planeta</span>
+        <span aria-hidden="true">♡</span>
+    </footer>
+</body>
+</html>
